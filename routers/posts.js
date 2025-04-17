@@ -19,4 +19,9 @@ routers.post("/", (req, res)=>{
     res.send("Inserimento nuovo post")
 })
 
+//modify    
+routers.get("/:id", (req, res)=>{
+    res.send(`Modifica parziale del post: ${req.params.id}`)
+})
+
 module.exports = routers;
