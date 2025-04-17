@@ -20,7 +20,7 @@ routers.post("/", (req, res)=>{
 })
 
 //modify    
-routers.get("/:id", (req, res)=>{
+routers.patch("/:id", (req, res)=>{
     res.send(`Modifica parziale del post: ${req.params.id}`)
 })
 
